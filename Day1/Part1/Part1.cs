@@ -2,12 +2,12 @@
 
 namespace AdvertOfCode.Day1.Part1;
 
-public class Day1Part2
+public class Day1Part1
 {
     public void RunMe()
     {
-        var lines = File.ReadAllLines("day1\\day1Input.txt");
-        var numbers = "[0-9]|zero|one|two|three|four|five|six|seven|eight|nine";
+        var lines = File.ReadAllLines("day1Input.txt");
+        var numbers = "[0-9]";
 
         int runningTotal = 0;
 
@@ -20,20 +20,12 @@ public class Day1Part2
 
             Console.WriteLine($"first: {first}, last: {last}");
 
-            int number = ParseNumber(first, last);
+            int number;
+            int.TryParse($"{first}{last}", out number);
             Console.WriteLine($"parsed number: {number}");
             runningTotal += number;
         }
 
         Console.WriteLine($"running total: {runningTotal}");
-    }
-
-    private static int ParseNumber(string first, string last)
-    {
-
-
-        int number;
-        int.TryParse($"{first}{last}", out number);
-        return number;
     }
 }
