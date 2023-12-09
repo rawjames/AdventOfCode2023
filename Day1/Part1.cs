@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace AdvertOfCode.Day1.Part1;
+namespace Day1;
 
 public class Day1Part1
 {

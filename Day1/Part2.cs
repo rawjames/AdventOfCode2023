@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace AdvertOfCode.Day1.Part1;
+namespace Day1;
 
 public class Day1Part2
 {
@@ -35,13 +35,13 @@ public class Day1Part2
         {
             compare = line[i] + compare;
             var match = regEx.Match(compare);
-            if(match.Success)
+            if (match.Success)
             {
                 return match.Value;
             }
         }
 
-        return string.Empty;    
+        return string.Empty;
     }
 
     private static int ParseNumber(string first, string last)
