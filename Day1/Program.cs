@@ -1,4 +1,4 @@
-﻿using AdvertOfCode.Day1.Part1;
+﻿using AdventOfCode.Day1;
 
 //var day1Part1 = new Day1Part1();
 //day1Part1.RunMe();

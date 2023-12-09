@@ -1,5 +1,5 @@
 ﻿
-using Day2;
+using AdventOfCode.Day2;
 
 //var part1 = new Part1();
 //part1.RunMe();
